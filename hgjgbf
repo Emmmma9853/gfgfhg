@@ -520,20 +520,259 @@ Frame_6.BorderSizePixel = 0
 Frame_6.Position = UDim2.new(0, 0, 0.278437495, 0)
 Frame_6.Size = UDim2.new(0, 420, 0, 2)
 
-TextLabel_3.Parent = HomeFrame
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_3.BorderSizePixel = 0
-TextLabel_3.Position = UDim2.new(0.0357142873, 0, 0.330000013, 0)
-TextLabel_3.Size = UDim2.new(0, 393, 0, 63)
-TextLabel_3.Font = Enum.Font.Gotham
-TextLabel_3.Text = "Voici SolarUi un panel Universel , qui comporte plein de script de la Lyks et d'autre script connue"
-TextLabel_3.TextColor3 = Color3.fromRGB(255, 0, 0)
-TextLabel_3.TextSize = 20.000
-TextLabel_3.TextWrapped = true
-TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
-TextLabel_3.TextYAlignment = Enum.TextYAlignment.Top
+KillGui.Name = "KillGui"
+KillGui.Parent = HomeFrame
+KillGui.BackgroundColor3 = Color3.fromRGB(118, 118, 118)
+KillGui.BackgroundTransparency = 0.600
+KillGui.BorderColor3 = Color3.fromRGB(255, 85, 0)
+KillGui.BorderSizePixel = 0
+KillGui.Position = UDim2.new(0.0714285746, 0, 0.65510416, 0)
+KillGui.Size = UDim2.new(0, 161, 0, 34)
+KillGui.Font = Enum.Font.GothamBold
+KillGui.Text = "Kill Gui"
+KillGui.TextColor3 = Color3.fromRGB(255, 255, 255)
+KillGui.TextSize = 28.000
+KillGui.TextWrapped = true
+KillGui.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.pl/view/raw/97ba439d", true))() 
+end)
+
+UICorner_9.CornerRadius = UDim.new(0, 15)
+UICorner_9.Parent = KillGui
+
+UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 4)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 229, 152))}
+UIGradient_9.Parent = KillGui
+
+ACS175Explosion.Name = "ACS1.7.5Explosion"
+ACS175Explosion.Parent = HomeFrame
+ACS175Explosion.BackgroundColor3 = Color3.fromRGB(118, 118, 118)
+ACS175Explosion.BackgroundTransparency = 0.600
+ACS175Explosion.BorderColor3 = Color3.fromRGB(255, 85, 0)
+ACS175Explosion.BorderSizePixel = 0
+ACS175Explosion.Position = UDim2.new(0.552380979, 0, 0.65510416, 0)
+ACS175Explosion.Size = UDim2.new(0, 161, 0, 34)
+ACS175Explosion.Font = Enum.Font.GothamBold
+ACS175Explosion.Text = "ACS 1.7.5 Explosion"
+ACS175Explosion.TextColor3 = Color3.fromRGB(255, 255, 255)
+ACS175Explosion.TextSize = 18.000
+ACS175Explosion.TextWrapped = true
+ACS175Explosion.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/BlastingStone/MyLuaStuff/master/ACSEngineExplosion.lua"))()
+end)
+
+UICorner_10.CornerRadius = UDim.new(0, 15)
+UICorner_10.Parent = ACS175Explosion
+
+UIGradient_10.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 4)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 229, 152))}
+UIGradient_10.Parent = ACS175Explosion
+
+MusicGui.Name = "MusicGui"
+MusicGui.Parent = HomeFrame
+MusicGui.BackgroundColor3 = Color3.fromRGB(118, 118, 118)
+MusicGui.BackgroundTransparency = 0.600
+MusicGui.BorderColor3 = Color3.fromRGB(255, 85, 0)
+MusicGui.BorderSizePixel = 0
+MusicGui.Position = UDim2.new(0.552380979, 0, 0.495104164, 0)
+MusicGui.Size = UDim2.new(0, 161, 0, 34)
+MusicGui.Font = Enum.Font.GothamBold
+MusicGui.Text = "Music Gui"
+MusicGui.TextColor3 = Color3.fromRGB(255, 255, 255)
+MusicGui.TextSize = 28.000
+MusicGui.TextWrapped = true
+MusicGui.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.pl/view/raw/32d275ab"))()
+end)
+
+UICorner_11.CornerRadius = UDim.new(0, 15)
+UICorner_11.Parent = MusicGui
+
+UIGradient_11.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 4)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 229, 152))}
+UIGradient_11.Parent = MusicGui
+
+AntiKick.Name = "Anti-Kick"
+AntiKick.Parent = HomeFrame
+AntiKick.BackgroundColor3 = Color3.fromRGB(118, 118, 118)
+AntiKick.BackgroundTransparency = 0.600
+AntiKick.BorderColor3 = Color3.fromRGB(255, 85, 0)
+AntiKick.BorderSizePixel = 0
+AntiKick.Position = UDim2.new(0.0714285746, 0, 0.495104164, 0)
+AntiKick.Size = UDim2.new(0, 161, 0, 34)
+AntiKick.Font = Enum.Font.GothamBold
+AntiKick.Text = "Anti-Kick"
+AntiKick.TextColor3 = Color3.fromRGB(255, 255, 255)
+AntiKick.TextSize = 28.000
+AntiKick.TextWrapped = true
+AntiKick.MouseButton1Down:Connect(function()
+	-- // Only allow to be executed once
+	assert(not getgenv().AntiKickExecuted, "Anti Kick is already running!")
+
+	-- // Services
+	local Players = game:GetService("Players")
+
+	-- // Vars
+	local LocalPlayer = Players.LocalPlayer
+	local KickAttemptFormat = "Kick attempted for: %s"
+	local BlockedMethods = {"Kick", "kick"}
+
+	-- // What to do when Kick detected
+	local function kickDetected(Player, Reason)
+		warn(KickAttemptFormat:format(Reason))
+	end
+
+	-- // Index hook
+	hookfunction(LocalPlayer.Kick, kickDetected)
+
+	-- // Namecall hook
+	local __namecall
+	__namecall = hookmetamethod(game, "__namecall", function(self, ...)
+		-- // Vars
+		local args = {...}
+		local method = getnamecallmethod()
+
+		-- // Check if kick attempt
+		if (self == LocalPlayer and table.find(BlockedMethods, method)) then
+			-- // Alert
+			kickDetected(self, args[1])
+
+			-- // Cancel it
+			return
+		end
+
+		-- // Return - so everything else that uses namecall does not break
+		return __namecall(self, ...)
+	end)
+
+	-- // Credits
+	getgenv().AntiKickExecuted = true
+	messagebox("Loaded.\n\n\n- Created by Stings.", "Anti Kick", 0)
+end)
+
+UICorner_12.CornerRadius = UDim.new(0, 15)
+UICorner_12.Parent = AntiKick
+
+UIGradient_12.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 4)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 229, 152))}
+UIGradient_12.Parent = AntiKick
+
+AntiAfk.Name = "Anti-Afk"
+AntiAfk.Parent = HomeFrame
+AntiAfk.BackgroundColor3 = Color3.fromRGB(118, 118, 118)
+AntiAfk.BackgroundTransparency = 0.600
+AntiAfk.BorderColor3 = Color3.fromRGB(255, 85, 0)
+AntiAfk.BorderSizePixel = 0
+AntiAfk.Position = UDim2.new(0.0714285746, 0, 0.335104167, 0)
+AntiAfk.Size = UDim2.new(0, 161, 0, 34)
+AntiAfk.Font = Enum.Font.GothamBold
+AntiAfk.Text = "Anti-Afk"
+AntiAfk.TextColor3 = Color3.fromRGB(255, 255, 255)
+AntiAfk.TextSize = 28.000
+AntiAfk.TextWrapped = true
+AntiAfk.MouseButton1Down:Connect(function()
+	-- // Wait until game is loaded
+	repeat wait() until game:IsLoaded()
+
+	-- // Services
+	local Players = game:GetService("Players")
+	local VirtualInputManager = game:GetService("VirtualInputManager")
+
+	-- // Vars
+	local LocalPlayer = Players.LocalPlayer
+
+	-- // See when we are being idle
+	LocalPlayer.Idled:Connect(function()
+		-- // Press mouse down
+		VirtualInputManager:SendMouseButtonEvent(0, 0, 2, true, nil, 0)
+
+		-- // Wait
+		wait(1)
+
+		-- // Press mouse up
+		VirtualInputManager:SendMouseButtonEvent(0, 0, 2, false, nil, 0)
+	end)
+end)
+
+UICorner_13.CornerRadius = UDim.new(0, 15)
+UICorner_13.Parent = AntiAfk
+
+UIGradient_13.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 4)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 229, 152))}
+UIGradient_13.Parent = AntiAfk
+
+ESP.Name = "ESP"
+ESP.Parent = HomeFrame
+ESP.BackgroundColor3 = Color3.fromRGB(118, 118, 118)
+ESP.BackgroundTransparency = 0.600
+ESP.BorderColor3 = Color3.fromRGB(255, 85, 0)
+ESP.BorderSizePixel = 0
+ESP.Position = UDim2.new(0.552380979, 0, 0.331770837, 0)
+ESP.Size = UDim2.new(0, 161, 0, 34)
+ESP.Font = Enum.Font.GothamBold
+ESP.Text = "ESP"
+ESP.TextColor3 = Color3.fromRGB(255, 255, 255)
+ESP.TextSize = 28.000
+ESP.TextWrapped = true
+ESP.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua'))()
+end)
+
+UICorner_14.CornerRadius = UDim.new(0, 15)
+UICorner_14.Parent = ESP
+
+UIGradient_14.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 4)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 229, 152))}
+UIGradient_14.Parent = ESP
+
+TPTools.Name = "TPTools"
+TPTools.Parent = HomeFrame
+TPTools.BackgroundColor3 = Color3.fromRGB(118, 118, 118)
+TPTools.BackgroundTransparency = 0.600
+TPTools.BorderColor3 = Color3.fromRGB(255, 85, 0)
+TPTools.BorderSizePixel = 0
+TPTools.Position = UDim2.new(0.552380979, 0, 0.808437526, 0)
+TPTools.Size = UDim2.new(0, 161, 0, 34)
+TPTools.Font = Enum.Font.GothamBold
+TPTools.Text = "TP Tools"
+TPTools.TextColor3 = Color3.fromRGB(255, 255, 255)
+TPTools.TextSize = 18.000
+TPTools.TextWrapped = true
+TPTools.MouseButton1Down:Connect(function()
+	mouse = game.Players.LocalPlayer:GetMouse()
+	tool = Instance.new("Tool")
+	tool.RequiresHandle = false
+	tool.Name = "Click Teleport"
+	tool.Activated:connect(function()
+		local pos = mouse.Hit+Vector3.new(0,2.5,0)
+		pos = CFrame.new(pos.X,pos.Y,pos.Z)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+	end)
+	tool.Parent = game.Players.LocalPlayer.Backpack
+end)
+
+UICorner_15.CornerRadius = UDim.new(0, 15)
+UICorner_15.Parent = TPTools
+
+UIGradient_15.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 4)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 229, 152))}
+UIGradient_15.Parent = TPTools
+
+InfinityJump.Name = "InfinityJump"
+InfinityJump.Parent = HomeFrame
+InfinityJump.BackgroundColor3 = Color3.fromRGB(118, 118, 118)
+InfinityJump.BackgroundTransparency = 0.600
+InfinityJump.BorderColor3 = Color3.fromRGB(255, 85, 0)
+InfinityJump.BorderSizePixel = 0
+InfinityJump.Position = UDim2.new(0.0714285746, 0, 0.808437526, 0)
+InfinityJump.Size = UDim2.new(0, 161, 0, 34)
+InfinityJump.Font = Enum.Font.GothamBold
+InfinityJump.Text = "Infinity Jump"
+InfinityJump.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfinityJump.TextSize = 18.000
+InfinityJump.TextWrapped = true
+InfinityJump.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/BsGlitch/-nfJumps/main/BsGlitch"))()
+end)
+
+UICorner_16.CornerRadius = UDim.new(0, 15)
+UICorner_16.Parent = InfinityJump
+
+UIGradient_16.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 4)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 229, 152))}
+UIGradient_16.Parent = InfinityJump
 
 CmdFrame.Name = "CmdFrame"
 CmdFrame.Parent = Main
